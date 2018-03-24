@@ -31,4 +31,4 @@ A: **Probably**.
 - Created by [HeyItsShuga](https://shuga.co)
 
 ## License
-[MIT](https://www.tldrlegal.com/l/mit)
+`launch.py` and the default `map.txt` file are licensed under the [MIT](https://www.tldrlegal.com/l/mit) license.
