@@ -23,7 +23,13 @@ A: **No**. Blame Nintendo.
 
 Q: Does this work on macOS/Windows/Linux?
 
-A: **Probably**.
+A:
+
+```
+Windows: Known issues (issue #1)
+macOS: Confirmed
+GNU-Linux: Unknown
+```
 
 ## Attribution
 - Rich Presence support library: [suclearnub/python-discord-rpc](https://github.com/suclearnub/python-discord-rpc/)
