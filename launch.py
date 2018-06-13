@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+f#!/usr/bin/env python3
 
 # If you are reading this, my condolences.
 # This tool is licensed under MIT.
@@ -13,8 +13,12 @@ print("\033[95mCreated by HeyItsShuga - Data from splatoon2.ink\033[0m")
 print("")
 client_id = '422151392338378753'
 
-rpc_obj = rpc.DiscordIpcClient.for_platform(client_id)
-print("\033[92mRPC connection successful.\033[0m")
+try:
+    rpc_obj = rpc.DiscordIpcClient.for_platform(client_id)
+    print("\033[92mRPC connection successful.\033[0m")
+except Exception as e:
+    print("\033[91mRPC connection failed! Is Discord open?\033[0m")
+    quit()
 
 top = tkinter.Tk()
 top.configure(background="#2C2F33")
@@ -76,10 +80,13 @@ def loop(lastMap, start_time):
             "large_image": icon
         }
     }
-    rpc_obj.set_activity(activity)
+    try:
+        rpc_obj.set_activity(activity)
+    except Exception as e:
+        print("\033[91mUnable to set the updated map status. Please report this to the GitHub page with the below error message and your OS.\033[0m")
+        raise e
 
     label.after(1000, lambda:loop(currentMap, start_time))
-    # loop()
 
 def map(name, modeID, modeStr):
     txt = open("core/map.txt", "w")
