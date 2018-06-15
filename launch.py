@@ -1,4 +1,4 @@
-f#!/usr/bin/env python3
+#!/usr/bin/env python3
 
 # If you are reading this, my condolences.
 # This tool is licensed under MIT.
