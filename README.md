@@ -12,6 +12,7 @@ This utility brings [Discord Rich Presence](https://discordapp.com/rich-presence
 
 ## Requirements
 - Python 3
+- `requests`
 - Tk bindings
 - Splatoon 2 fonts (recommended, provided)
 - [Discord](https://discordapp.com)
