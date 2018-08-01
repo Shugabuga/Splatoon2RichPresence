@@ -27,9 +27,9 @@ Q: Does this work on macOS/Windows/Linux?
 A:
 
 ```
-Windows: Known issues (issue #1)
+Windows: Known issues (issues #1, #2)
 macOS: Confirmed
-GNU-Linux: Unknown
+GNU-Linux: Confirmed (issue #4)
 ```
 
 ## Attribution
