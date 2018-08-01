@@ -22,7 +22,7 @@ except Exception as e:
 
 top = tkinter.Tk()
 top.configure(background="#2C2F33")
-top.resizable(width=False, height=False)
+top.resizable(width=True, height=False)
 top.geometry("500x300")
 top.wm_title="Splatoon 2 RPC"
 top.title="Splatoon 2 RPC"
